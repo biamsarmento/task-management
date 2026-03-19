@@ -9,6 +9,8 @@ import { makeQueryClient } from "./query-client";
 
 export const api = createTRPCReact<AppRouter>();
 
+// keep a single query client on the browser side so the cache persists
+// between navigations — on the server we always make a fresh one
 let browserQueryClient: ReturnType<typeof makeQueryClient> | undefined;
 
 function getQueryClient() {

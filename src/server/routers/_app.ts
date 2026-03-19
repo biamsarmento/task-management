@@ -1,3 +1,4 @@
+// root router — just wires the tasks router under the "tasks" namespace
 import { router } from "../trpc";
 import { tasksRouter } from "./tasks";
 

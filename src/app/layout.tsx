@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   description: "A simple task management application",
 };
 
+// wraps the whole app with the trpc + react-query provider
 export default function RootLayout({
   children,
 }: {

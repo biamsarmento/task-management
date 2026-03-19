@@ -1,3 +1,4 @@
+// no auth for now, everything is public
 import { initTRPC } from "@trpc/server";
 
 const t = initTRPC.create();
